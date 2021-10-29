@@ -78,8 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    console.log(error);
-
     return error;
   }
 
@@ -125,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalBody.append(thanksModal);
 
-    // setTimeout(() => {
-    //   thanksModal.remove();
-    //   modalContent.classList.remove('hidden');
-    //   closeModal();
-    // }, 4000);
+    setTimeout(() => {
+      thanksModal.remove();
+      modalContent.classList.remove('hidden');
+      closeModal();
+    }, 4000);
   }
 
   function formAddError(input) {
