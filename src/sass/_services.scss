@@ -1,0 +1,155 @@
+/*-------------------- Services --------------------*/
+
+.services {
+  padding: 190px 0px 210px 0px;
+
+  @media (max-width: 1023px) {
+    padding: 100px 0px 130px 0px;
+  }
+
+  @media (max-width: 590px) {
+    padding: 80px 0px 130px 0px;
+  }
+
+  @media (max-width: 510px) {
+    padding: 60px 0px 130px 0px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  &__row {
+    &_left {
+      margin: 0px 100px 0px 0px;
+
+      @media (max-width: 1023px) {
+        margin: 0px 0px 50px 0px;
+      }
+    }
+
+    &_right {
+    }
+  }
+
+  &__column {
+    &:not(:last-child) {
+      margin: 0px 0px 100px 0px;
+    }
+
+    @media (max-width: 1023px) {
+      &:not(:last-child) {
+        margin: 0px 0px 50px 0px;
+      }
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 0px 100px 0px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 30px;
+    max-width: 432px;
+
+    a {
+      color: $blue-02;
+
+      &:hover {
+        color: $blue-04;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 80px;
+      padding: 0px 15px;
+    }
+
+    @media (max-width: 590px) {
+      font-size: 34px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 510px) {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/*-------------------- Item-Service --------------------*/
+
+.item-service {
+  padding: 48px;
+  background-color: #fff;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+
+  @media (min-width: 1024px) {
+    max-width: 380px;
+  }
+
+  &__image {
+    display: block;
+
+    &:not(:last-child) {
+      margin: 0px 0px 56px 26px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    color: inherit;
+    transition: color 0.3s ease 0s;
+
+    &:not(:last-child) {
+      margin: 0px 0px 16px 0px;
+    }
+
+    @media (min-width: 768px) {
+      &:hover {
+        color: $blue-02;
+      }
+    }
+  }
+
+  &__text {
+    opacity: 0.6;
+
+    &:not(:last-child) {
+      margin: 0px 0px 32px 0px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30 / 14 * 100%;
+    color: $blue-04;
+    background: url("../img/serv/arrow.svg") right no-repeat;
+    padding: 0px 44px 0px 0px;
+
+    @media (min-width: 768px) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

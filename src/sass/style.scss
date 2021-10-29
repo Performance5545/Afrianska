@@ -1,0 +1,61 @@
+/*-------------------- Шрифты --------------------*/
+
+@import "fonts";
+
+/*-------------------- Компоненты --------------------*/
+
+@import "variables";
+@import "static";
+@import "header";
+@import "illustration";
+@import "services";
+@import "clients";
+@import "footer";
+@import "popup";
+
+/*-------------------- Обнуление --------------------*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*-------------------- Стандартные стили --------------------*/
+
+body,
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: $blue-01;
+}

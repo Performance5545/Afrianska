@@ -1,0 +1,155 @@
+/*-------------------- Clients --------------------*/
+
+.clients {
+  position: relative;
+  padding: 96px 0px 994px 0px;
+  border-radius: 200px 0px 0px 0px;
+  background-color: $blue-04;
+
+  @media (max-width: 1024px) {
+    padding: 60px 0px 860px 0px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0px 1160px 0px;
+  }
+
+  @media (max-width: 510px) {
+    padding: 60px 0px 1350px 0px;
+  }
+
+  @media (max-width: 380px) {
+    padding: 60px 0px 1400px 0px;
+  }
+
+  &__container {
+  }
+
+  &__header {
+    display: flex;
+    margin: 0px 0px 123px 0px;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0px 0px 90px 0px;
+    }
+
+    @media (max-width: 500px) {
+      margin: 0px 0px 50px 0px;
+    }
+  }
+
+  &__title {
+    margin: 0px 97px 0px 0px;
+    padding: 0px 15px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: rgb(236, 236, 236);
+      }
+    }
+
+    @media (max-width: 1023px) {
+      margin: 0px 0px 30px 0px;
+      padding: 0px 25px;
+    }
+
+    @media (max-width: 590px) {
+      font-size: 34px;
+    }
+
+    @media (max-width: 510px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    opacity: 0.6;
+    max-width: 560px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    flex: 0 1 25%;
+
+    @media (min-width: 970px) {
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 970px) {
+      flex: 0 1 50%;
+
+      &:nth-child(1) {
+        border-bottom: 1px solid #fff;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid #fff;
+      }
+
+      &:nth-child(odd) {
+        border-right: 1px solid #fff;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex: 0 1 100%;
+      border: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 128px;
+
+    @media (min-width: 970px) {
+      &:first-child {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    &_active {
+      background-color: #4e86bb;
+    }
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 46 / 20 * 100%;
+    color: #fff;
+  }
+}
+
+.modal {
+  &__body {
+    background-color: $blue-01;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+  }
+}

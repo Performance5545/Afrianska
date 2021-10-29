@@ -1,0 +1,45 @@
+/*-------------------- Menu-Burger --------------------*/
+
+.menu-burger {
+  display: block;
+  position: relative;
+  height: 16px;
+  width: 24px;
+  cursor: pointer;
+  z-index: 50;
+
+  span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $blue-03;
+    transition: all 0.3s ease 0s;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &_active {
+    span {
+      transform: scale(0);
+
+      &:first-child {
+        top: calc(50% - 1px);
+        transform: rotate(-45deg);
+      }
+
+      &:last-child {
+        bottom: calc(50% - 1px);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
